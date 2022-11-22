@@ -15,22 +15,13 @@ const Navbar = () => {
         </div>
         <ul className="nav-items flex">
           <li>
-            <NavLink
-              to="/"
-
-            >
-              Rockets
-            </NavLink>
+            <NavLink to="/">Rockets</NavLink>
           </li>
           <li>
-            <NavLink to="/Missions">
-              Missions
-            </NavLink>
+            <NavLink to="/Missions">Missions</NavLink>
           </li>
           <li>
-            <NavLink to="/MyProfile">
-              My Profile
-            </NavLink>
+            <NavLink to="/MyProfile">My Profile</NavLink>
           </li>
         </ul>
       </nav>

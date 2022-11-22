@@ -1,7 +1,15 @@
-import React from 'react'
+import Rocket from "./rocket"
 
-export default function Rockets() {
+const Rockets =() => {
   return (
-    <div>Rockets</div>
+    <div>
+      <ul>
+        <li>
+          <Rocket/>
+        </li>
+      </ul>
+    </div>
   )
 }
+
+export default Rockets;
