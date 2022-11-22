@@ -1,14 +1,21 @@
-import { NavLink } from 'react-router-dom';
+const navBar = () => {
+  return (
+    <header>
+      <nav>
+        <div className="container">
+          <div className="logo">
+            <img src="" alt="SpaceX Logo" />
+            <h3>Space Travellers' Hub</h3>
+          </div>
+          <ul role="list">
+            <li>Rockets</li>
+            <li>Missions</li>
+            <li>My Profile</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  )
+}
 
-const Navbar = () => (
-  <header className="top-section d-flex">
-    <nav>
-      <NavLink to="/" className="logo"><img src='./assets/planet2'/>Space Travellers Hub</NavLink>
-      <NavLink to="/" className="">Rocketss</NavLink>
-      <NavLink to="/categories" className="d-flex arip">Missions</NavLink>
-      <NavLink to="/categories" className="d-flex arip">Missions</NavLink>My profile
-    </nav>
-  </header>
-);
-
-export default Navbar;
+export default navBar;
