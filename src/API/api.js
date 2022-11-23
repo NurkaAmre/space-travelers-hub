@@ -18,7 +18,6 @@ const api = {
               rocketImage,
             };
           },
-          console.log(rockets)
         );
         return rockets;
       },
