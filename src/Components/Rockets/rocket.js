@@ -1,18 +1,22 @@
-const Rocket = ({title, image, description, id}) => {
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { getRockets, allRockets } from '../redux/rockets/rocketsSlice';
+import RocketList from './RocketList';
 
-    
-    return (
-        <div>
-            <div>
-                <img src={image} alt={title} />
-                <div>
-                    <h2>{title}</h2>
-                    <p>{description}</p>
-                    <button id={id}>Reserve Rocket</button>
-                </div>
-            </div>
-        </div>
-    )
+function RocketContainer() {
+  const rockets = useSelector(allRockets);
+  const dispatch = useDispatch();
+
+  console.log(rockets);
+
+  useEffect(() => {
+    dispatch(getRockets());
+  }, [dispatch]);
+  return (
+    <>
+      <Rockets />
+    </>
+  );
 }
 
-export default Rocket;
+export default RocketContainer;
