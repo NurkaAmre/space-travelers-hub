@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Rocket from './RocketList';
+import Rocket from './Rocket';
 
-
-const Rockets = ({ rockets }) => (
+const RocketList = ({ rockets }) => (
   <>
     {
         rockets.map((rocket) => (
@@ -19,7 +18,7 @@ const Rockets = ({ rockets }) => (
   </>
 );
 
-Rockets.propTypes = {
+RocketList.propTypes = {
   rockets: PropTypes.arrayOf(PropTypes.shape({
     rocketId: PropTypes.string,
     rocketName: PropTypes.string,
@@ -27,4 +26,4 @@ Rockets.propTypes = {
   })).isRequired,
 };
 
-export default Rockets;
+export default RocketList;

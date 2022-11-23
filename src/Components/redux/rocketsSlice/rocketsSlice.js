@@ -6,9 +6,9 @@ const GET_ROCKETS = 'GET_ROCKETS';
 
 const initialState = {
   rockets: [],
-  status: 'idle', // 'idle' | 'loading' | 'succeeded' | 'failed'
+  status: 'idle',
   error: null,
-  message: null,
+  message: 'rocket',
 };
 
 // Thunks

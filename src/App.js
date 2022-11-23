@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 
 // Components
 import Navbar from './Components/Header/Navbar';
-import Rockets from './Components/Rockets/Rockets';
+import Rockets from './Pages/Rockets';
 import Missions from './Components/Missions/Missions';
 import MyProfile from './Components/MyProfile/Myprofile';
 
