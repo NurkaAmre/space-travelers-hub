@@ -7,14 +7,14 @@ const api = {
           ({
             rocket_id: rocketId,
             rocket_name: rocketName,
-            rocket_type: rocketType,
+            description: rocketDescription,
             flickr_images: rocketImages,
           }) => {
             const rocketImage = rocketImages[0];
             return {
               rocketId,
               rocketName,
-              rocketType,
+              rocketDescription,
               rocketImage,
             };
           },
