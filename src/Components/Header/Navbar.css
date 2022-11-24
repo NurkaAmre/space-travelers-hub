@@ -5,10 +5,10 @@
     width: 100%;
     align-items: center;
     justify-content: space-between;
+
     border-bottom: 2px solid grey;
     padding: 1rem;
-    border: 1px solid;
-    margin-bottom: 3rem;
+
   }
   
   .head-logo {
