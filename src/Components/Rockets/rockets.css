@@ -29,3 +29,12 @@ button {
     border-radius: 3px;
     border: none;
 }
+
+.reserved {
+    background-color: #19a5aa;
+    border: 1px solid #0096FF;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 14px;
+    margin-right: 3px;
+}

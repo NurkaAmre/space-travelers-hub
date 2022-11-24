@@ -25,13 +25,14 @@ const rocketsSlice = createSlice({
   name: 'rockets',
   initialState,
   reducers: {
-     rocketBooking: (state, action) => ({
+    rocketBooking: (state, action) => ({
       ...state,
       rockets: [
         ...state.rockets.map((rocket) => (
           (rocket.rocketId !== action.payload) ? rocket : {
             ...rocket,
             rocketReservation: !rocket.rocketReservation,
+            reserved: !rocket.reserved,
           }
         )),
       ],

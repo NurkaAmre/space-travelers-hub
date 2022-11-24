@@ -17,7 +17,7 @@ const api =  {
         rocketName,
         rocketDescription,
         rocketImage,
-        rocketReservation: false,
+        reserved: false,
       };
     },
   );

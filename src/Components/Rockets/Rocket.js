@@ -5,8 +5,9 @@ import './rockets.css';
 
 const Rocket = ({
   rocketId, rocketImage, rocketName, rocketDescription,
-  rocketReservation, handleBooking,
+  reserved, handleBooking,
 }) => 
+
 (  
   <div className="flu">
     <img
@@ -17,15 +18,21 @@ const Rocket = ({
     <div className="text">
       <h3 className="font">{ rocketName }</h3>
       <p className="my-2">
-      
+        { reserved ? (
+          <span
+            className="reserved"
+          >
+            Reserved
+          </span>
+        ) : '' }
         { rocketDescription }
       </p>
       <button
-        id={rocketId}
+        id={rocketId} className="active"
         onClick={() => handleBooking(rocketId)}
-        
+        className={` shadow-none bg-blue-700 p-2.5 rounded-md border-blue-700 border-2 hover:shadow-blue-500 hover:text-blue-500 hover:bg-white ${reserved ? 'text-gray-800 border-2 border-gray-800 bg-white hover:text-white hover:bg-gray-800 hover:shadow-gray-500' : ''}`}
       >
-        { rocketReservation ? 'Cancel Reservation' : 'Reserve Rockets' }
+        { reserved ? 'Cancel Reservation' : 'Reserve Rockets' }
       </button>
     </div>
   </div>
@@ -35,7 +42,7 @@ Rocket.propTypes = {
   rocketImage: PropTypes.string.isRequired,
   rocketName: PropTypes.string.isRequired,
   rocketDescription: PropTypes.string.isRequired,
-  rocketReservation: PropTypes.bool.isRequired,
+  reserved: PropTypes.bool.isRequired,
   handleBooking: PropTypes.func.isRequired,
 };
 
