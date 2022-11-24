@@ -2,13 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './rockets.css';
 
-
 const Rocket = ({
   rocketId, rocketImage, rocketName, rocketDescription,
   reserved, handleBooking,
-}) => 
-
-(  
+}) => (
   <div className="flu">
     <img
       className="imge"
@@ -28,8 +25,9 @@ const Rocket = ({
         { rocketDescription }
       </p>
       <button
-        id={rocketId} className="active"
+        id={rocketId}
         onClick={() => handleBooking(rocketId)}
+        className="btn1"
       >
         { reserved ? 'Cancel Reservation' : 'Reserve Rockets' }
       </button>

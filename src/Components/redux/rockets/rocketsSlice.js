@@ -53,7 +53,7 @@ const rocketsSlice = createSlice({
         ...state,
         status: 'failed',
         error: action.error.message,
-         }));
+      }));
   },
 });
 
