@@ -4,7 +4,7 @@ import {
   configureStore,
 } from '@reduxjs/toolkit';
 import thunk from 'redux-thunk';
-import rocketsReducer from './rocketsSlice/rocketsSlice';
+import rocketsReducer from './rockets/rocketsSlice';
 
 // root Reducer
 const rootReducer = combineReducers({
