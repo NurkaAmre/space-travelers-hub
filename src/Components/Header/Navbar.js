@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <header>
-      <nav className="container flex">
+      <nav className="container2">
         <div className="head-logo flex">
           <img className="img" src={Planet2} alt="SpaceX Logo" />
           <h1>Space Travelers Hub</h1>
