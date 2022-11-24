@@ -1,0 +1,31 @@
+.flex {
+    display: flex;
+    gap: 20px;
+    padding-top: 5%;
+}
+
+.imge {
+  height: 250px;
+  width: 250px;
+  margin-left: 10px;
+}
+
+.font {
+    font-size: 2rem;
+    margin-top: 5px;
+}
+ 
+.my-2 {
+ font-size: 1.2rem;
+ margin-top: 20px;
+ }
+
+button {
+    background-color: #0096FF;
+    color: aliceblue;
+    margin-top: 50px;
+    width: 106px;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+}

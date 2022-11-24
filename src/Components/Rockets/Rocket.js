@@ -1,26 +1,33 @@
 import React from 'react';
-import { Button } from '@material-tailwind/react';
 import PropTypes from 'prop-types';
+import './rockets.css';
+
 
 const Rocket = ({
   rocketId, rocketImage, rocketName, rocketDescription,
-}) => (
-  <div className="flex gap-6">
+}) => 
+(  
+  <div className="flex">
     <img
-      className="w-1/5 sm:w-1/2 h-fit"
+      className="imge"
       src={rocketImage}
       alt={rocketName}
     />
-    <div className="text-left">
-      <h3 className="font-bold">{ rocketName }</h3>
-      <p className="my-2">{ rocketDescription }</p>
-      <Button id={rocketId}>
-        Reserve Rockets
-      </Button>
+    <div className="text">
+      <h3 className="font">{ rocketName }</h3>
+      <p className="my-2">
+      
+        { rocketDescription }
+      </p>
+      <button
+        id={rocketId}
+  
+      >
+        Reserve Rocket
+      </button>
     </div>
   </div>
 );
-
 Rocket.propTypes = {
   rocketId: PropTypes.string.isRequired,
   rocketImage: PropTypes.string.isRequired,

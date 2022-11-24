@@ -1,7 +1,7 @@
-const baseURL ='https://api.spacexdata.com/v3/rockets'
+
 const api =  {
   fetchRockets: async () => {
-  const response = await fetch(`${baseURL}rockets`);
+  const response = await fetch('https://api.spacexdata.com/v3/rockets');
   const data = await response.json();
   const rockets = data.map(
     ({
@@ -11,11 +11,12 @@ const api =  {
       description: rocketDescription,
       flickr_images: rocketImages,
     }) => {
+      const rocketImage = rocketImages[Math.floor(Math.random() * rocketImages.length)];
       return {
         rocketId,
         rocketName,
         rocketDescription,
-        rocketImages,
+        rocketImage,
       };
     },
   );
