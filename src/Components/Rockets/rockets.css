@@ -1,13 +1,13 @@
-.flex {
+.flu {
     display: flex;
-    gap: 20px;
-    padding-top: 5%;
+    gap: 25px;
+    margin-top: 6%;
 }
 
 .imge {
   height: 250px;
-  width: 250px;
-  margin-left: 10px;
+  width: 350px;
+  margin-left: 50px;
 }
 
 .font {
@@ -24,8 +24,17 @@ button {
     background-color: #0096FF;
     color: aliceblue;
     margin-top: 50px;
-    width: 106px;
+    width: 120px;
     height: 30px;
     border-radius: 3px;
     border: none;
+}
+
+.reserved {
+    background-color: #19a5aa;
+    border: 1px solid #0096FF;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 14px;
+    margin-right: 3px;
 }

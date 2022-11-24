@@ -10,6 +10,7 @@ const api =  {
       rocket_name: rocketName,
       description: rocketDescription,
       flickr_images: rocketImages,
+      wikipedia: link,
     }) => {
       const rocketImage = rocketImages[Math.floor(Math.random() * rocketImages.length)];
       return {
@@ -17,6 +18,8 @@ const api =  {
         rocketName,
         rocketDescription,
         rocketImage,
+        reserved: false,
+        link,
       };
     },
   );
