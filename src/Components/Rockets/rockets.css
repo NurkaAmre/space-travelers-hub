@@ -1,7 +1,7 @@
 .flu {
-    display: flex;
-    gap: 25px;
-    margin-top: 6%;
+  display: flex;
+  gap: 25px;
+  margin-top: 5%;
 }
 
 .imge {
@@ -10,31 +10,35 @@
   margin-left: 50px;
 }
 
-.font {
-    font-size: 2rem;
-    margin-top: 5px;
+.flex {
+  display: flex;
 }
- 
-.my-2 {
- font-size: 1.2rem;
- margin-top: 20px;
- }
 
-button {
-    background-color: #0096FF;
-    color: aliceblue;
-    margin-top: 50px;
-    width: 120px;
-    height: 30px;
-    border-radius: 3px;
-    border: none;
+.font {
+  font-size: 2rem;
+  margin-top: 5px;
+}
+
+.my-2 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.btn1 {
+  background-color: #0096ff;
+  color: aliceblue;
+  margin-top: 50px;
+  width: 120px;
+  height: 30px;
+  border-radius: 3px;
+  border: none;
 }
 
 .reserved {
-    background-color: #19a5aa;
-    border: 1px solid #0096FF;
-    border-radius: 3px;
-    color: #fff;
-    font-size: 14px;
-    margin-right: 3px;
+  background-color: #19a5aa;
+  border: 1px solid #0096ff;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14px;
+  margin-right: 3px;
 }

@@ -9,10 +9,10 @@ const mission = (item) => {
     <tr>
       <th scope="row">{name}</th>
       <td>{desc}</td>
-      <td className='align-self-center'><span class="badge bg-info text-dark">{status}</span></td>
-      <td><button type="button" class="btn btn-outline-dark">Mission</button></td>
-      
+      <td className="align-self-center"><span className="badge bg-info text-dark">{status}</span></td>
+      <td><button type="button" className="btn btn-outline-dark">Mission</button></td>
+
     </tr>
-  )
-}
- export default mission;
+  );
+};
+export default mission;

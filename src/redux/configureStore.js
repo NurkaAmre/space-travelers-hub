@@ -3,11 +3,11 @@ import thunk from 'redux-thunk';
 import { handleMissionReducer } from './Mission/mission';
 
 const reducers = combineReducers({
-    mission: handleMissionReducer,
+  mission: handleMissionReducer,
 });
 
 const storeConfig = createStore(
-    reducers,
-    applyMiddleware(thunk),
+  reducers,
+  applyMiddleware(thunk),
 );
 export default storeConfig;
