@@ -7,8 +7,8 @@ import '../../App.css';
 const Navbar = () => {
 
   return (
-    <header>
-      <nav className="container flex">
+    <header className='mb-5'>
+      <nav className="container2 flex">
         <div className="head-logo flex">
           <img className="img" src={Planet2} alt="SpaceX Logo" />
           <h1>Space Travelers Hub</h1>
