@@ -1,12 +1,14 @@
-.container {
+.container2 {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     align-items: center;
     justify-content: space-between;
+
     border-bottom: 2px solid grey;
     padding: 1rem;
+
   }
   
   .head-logo {
