@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Planet2 from '../../assets/planet2.png';
+import Planet from '../../assets/planet.png';
 import './Navbar.css';
 import '../../App.css';
 
@@ -10,7 +10,7 @@ const Navbar = () => {
     <header>
       <nav className="container flex">
         <div className="head-logo flex">
-          <img className="img" src={Planet2} alt="SpaceX Logo" />
+          <img className="img" src={Planet} alt="SpaceX Logo" />
           <h1>Space Travelers Hub</h1>
         </div>
         <ul className="nav-items flex">

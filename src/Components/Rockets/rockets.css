@@ -1,7 +1,7 @@
-.flex {
+.flu {
     display: flex;
     gap: 20px;
-    padding-top: 5%;
+    margin-top: 7%;
 }
 
 .imge {
@@ -24,7 +24,7 @@ button {
     background-color: #0096FF;
     color: aliceblue;
     margin-top: 50px;
-    width: 106px;
+    width: 120px;
     height: 30px;
     border-radius: 3px;
     border: none;

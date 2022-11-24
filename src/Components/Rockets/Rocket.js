@@ -5,9 +5,10 @@ import './rockets.css';
 
 const Rocket = ({
   rocketId, rocketImage, rocketName, rocketDescription,
+  rocketReservation, handleBooking,
 }) => 
 (  
-  <div className="flex">
+  <div className="flu">
     <img
       className="imge"
       src={rocketImage}
@@ -21,9 +22,10 @@ const Rocket = ({
       </p>
       <button
         id={rocketId}
-  
+        onClick={() => handleBooking(rocketId)}
+        
       >
-        Reserve Rocket
+        { rocketReservation ? 'Cancel Reservation' : 'Reserve Rockets' }
       </button>
     </div>
   </div>
@@ -33,6 +35,8 @@ Rocket.propTypes = {
   rocketImage: PropTypes.string.isRequired,
   rocketName: PropTypes.string.isRequired,
   rocketDescription: PropTypes.string.isRequired,
+  rocketReservation: PropTypes.bool.isRequired,
+  handleBooking: PropTypes.func.isRequired,
 };
 
 export default Rocket;

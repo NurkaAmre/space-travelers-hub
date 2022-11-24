@@ -1,24 +1,27 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getRockets, allRockets } from '../redux/rockets/rocketsSlice';
+import { getRockets, allRockets, rocketBooking } from '../redux/rockets/rocketsSlice';
 import RocketList from './RocketList';
 
-const RocketsContainer = () => {
+function RocketsContainer() {
   const rockets = useSelector(allRockets);
   const dispatch = useDispatch();
-
-
   useEffect(() => {
-    dispatch(getRockets());
-  }, [dispatch]);
+    if (rockets.length === 0) dispatch(getRockets());
+  }, []);
+
+  const handleBooking = (id) => {
+    dispatch(rocketBooking(id));
+  };
+
   return (
-    <section>
+    <section className="Amre">
       <RocketList
         rockets={rockets}
+        handleBooking={handleBooking}
       />
     </section>
   );
 }
-;
 
 export default RocketsContainer;
