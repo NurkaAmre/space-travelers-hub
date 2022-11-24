@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { RetrieveMission } from '../../redux/Mission/mission';
 import Mission from './mission';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const Missions = () => {

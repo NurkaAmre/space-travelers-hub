@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import api from '../../../api/api';
+import api from '../../../API/api';
 
 // Actions
 const GET_ROCKETS = 'GET_ROCKETS';

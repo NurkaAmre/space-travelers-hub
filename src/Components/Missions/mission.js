@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const mission = (item) => {
   const { name, desc, status } = item;
@@ -9,7 +10,7 @@ const mission = (item) => {
       <th scope="row">{name}</th>
       <td>{desc}</td>
       <td className='align-self-center'><span class="badge bg-info text-dark">{status}</span></td>
-      <td><button type="button" class="btn btn-outline-dark">Mission action</button></td>
+      <td><button type="button" class="btn btn-outline-dark">Mission</button></td>
       
     </tr>
   )
