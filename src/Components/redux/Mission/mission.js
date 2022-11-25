@@ -39,7 +39,6 @@ const LeaveMission = (missionid, missions) => ({
 
 const RetrieveMission = () => (dispatch) => {
   axios.get(apiUrl).then((response) => {
-    //console.log(response.data);
     const missionItems = Object.keys(response.data).map((key) => {
       const missionItem = response.data[key];
       return {
