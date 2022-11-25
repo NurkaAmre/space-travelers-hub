@@ -24,7 +24,7 @@
   margin-top: 20px;
 }
 
-.btn1 {
+.bg-red-700 {
   background-color: #0096ff;
   color: aliceblue;
   margin-top: 50px;
@@ -34,11 +34,16 @@
   border: none;
 }
 
+.bg-white {
+  border-radius: 3px;
+  margin-top: 50px;
+}
+
 .reserved {
   background-color: #19a5aa;
   border: 1px solid #0096ff;
   border-radius: 3px;
   color: #fff;
   font-size: 14px;
-  margin-right: 3px;
+  margin-right: 10px;
 }

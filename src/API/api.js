@@ -4,12 +4,10 @@ const api = {
     const data = await response.json();
     const rockets = data.map(
       ({
-
         rocket_id: rocketId,
         rocket_name: rocketName,
         description: rocketDescription,
         flickr_images: rocketImages,
-        wikipedia: link,
       }) => {
         const rocketImage = rocketImages[Math.floor(Math.random() * rocketImages.length)];
         return {
@@ -18,9 +16,6 @@ const api = {
           rocketDescription,
           rocketImage,
           reserved: false,
-
-          link,
-
         };
       },
     );
