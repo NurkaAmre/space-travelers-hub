@@ -31,7 +31,7 @@ const JoinMission = (missionid, missions) => ({
     missions,
 });
 
-const LeaveMission = (missionid,missions) => ({
+const LeaveMission = (missionid, missions) => ({
     type: LEAVE_MISSION,
     missionid,
     missions,
@@ -56,4 +56,4 @@ const RetrieveMission = () => (dispatch) => {
         });
 }
 
-export { handleMissionReducer, RetrieveMission, JoinMission, LeaveMission};
+export { handleMissionReducer, RetrieveMission, JoinMission, LeaveMission };
