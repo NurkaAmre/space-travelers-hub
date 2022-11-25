@@ -27,9 +27,9 @@
       "object-curly-newline": "off",
       "react/jsx-key": "off",
       "no-console": "off",
-      "no-case-declarations": "off"
-
-
+      "no-case-declarations": "off",
+      "linebreak-style": "off",
+      "camelcase": "off"
     },
     "ignorePatterns": [
       "dist/",
