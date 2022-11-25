@@ -20,7 +20,9 @@
       "import/no-unresolved": "off",
       "no-shadow": "off",
       "indent": "off",
-      "quotes": "off"
+      "quotes": "off",
+      "jsx-quotes": "off",
+      "semi": "off"
     },
     "ignorePatterns": [
       "dist/",
