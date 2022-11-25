@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Button } from '@material-tailwind/react';
 import './rockets.css';
 
 const Rocket = ({
@@ -24,14 +25,13 @@ const Rocket = ({
         ) : '' }
         { rocketDescription }
       </p>
-      <button
-        type="button"
+      <Button
         id={rocketId}
         onClick={() => handleBooking(rocketId)}
-        className="btn1"
+        className={` shadow-none bg-red-700 p-2.5 rounded-md border-blue-700 border-2 hover:shadow-blue-500 hover:text-blue-500 hover:bg-white ${reserved ? 'text-gray-800 border-2 border-gray-800 bg-white hover:text-white hover:bg-gray-800 hover:shadow-gray-500' : ''}`}
       >
         { reserved ? 'Cancel Reservation' : 'Reserve Rockets' }
-      </button>
+      </Button>
     </div>
   </div>
 );
