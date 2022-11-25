@@ -29,7 +29,8 @@
       "no-console": "off",
       "no-case-declarations": "off",
       "linebreak-style": "off",
-      "camelcase": "off"
+      "camelcase": "off",
+      "react/jsx-one-expression-per-line": "off"
     },
     "ignorePatterns": [
       "dist/",
