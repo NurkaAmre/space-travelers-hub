@@ -8,9 +8,9 @@ const LEAVE_MISSION = "SPACE-STORE/Mission/LEAVE_MISSION";
 const InitialState = [];
 
 const handleMissionReducer = (state = InitialState, action) => {
+    console.log(state);
   switch (action.type) {
     case RETRIEVE_MISSION:
-      console.log(action.payload);
       return [...action.payload];
     case JOIN_MISSION:
       const newArray = [...action.missions];
