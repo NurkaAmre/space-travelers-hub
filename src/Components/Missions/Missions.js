@@ -33,7 +33,7 @@ const Missions = () => {
               Description
             </th>
             <th scope="col">Status</th>
-            <th scope="col"></th>
+            <th scope="col"/>
           </tr>
         </thead>
         <tbody>
