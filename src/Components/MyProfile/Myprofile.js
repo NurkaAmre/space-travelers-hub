@@ -20,7 +20,7 @@ const UserProfile = () => {
         ) : (
 
           rocketsReserved.map(({ rocketId: id, rocketName }) => (
-            <ul className="list">
+            <ul key={id} className="list">
               <li key={id} className="listChild">
                 <h4>{rocketName}</h4>
               </li>

@@ -8,7 +8,7 @@ function RocketsContainer() {
   const dispatch = useDispatch();
   useEffect(() => {
     if (rockets.length === 0) dispatch(getRockets());
-  }, []);
+  }, [dispatch, rockets.length]);
 
   const handleBooking = (id) => {
     dispatch(rocketBooking(id));
