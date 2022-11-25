@@ -1,29 +1,37 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Planet from '../../assets/planet.png';
 import './Navbar.css';
-import '../../App.css';
+import Planet from '../../assets/planet.png';
 
-const Navbar = () => (
-  <header>
-    <nav className="container2">
-      <div className="head-logo flex">
-        <img className="img" src={Planet} alt="SpaceX Logo" />
-        <h1>Space Travelers Hub</h1>
+const NavBar = () => (
+  <header className="headerContainer">
+    <NavLink to="/" className="logo">
+      <div className="logoContainer">
+        <img src={Planet} alt="Logo" className="image" />
+        <h1>
+          Space Travelers&apos; Hub
+        </h1>
       </div>
-      <ul className="nav-items flex">
-        <li>
-          <NavLink to="/">Rockets</NavLink>
-        </li>
-        <li>
-          <NavLink to="/Missions">Missions</NavLink>
-        </li>
-        <li>
-          <NavLink to="/MyProfile">My Profile</NavLink>
-        </li>
-      </ul>
+    </NavLink>
+    <nav className="navigation">
+      <NavLink
+        to="/"
+      >
+        Rockets
+      </NavLink>
+      <NavLink
+        to="missions"
+      >
+        Missions
+      </NavLink>
+      <span> | </span>
+      <NavLink
+        to="myprofile"
+      >
+        My Profile
+      </NavLink>
     </nav>
   </header>
+
 );
 
-export default Navbar;
+export default NavBar;

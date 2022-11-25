@@ -25,6 +25,7 @@ const Rocket = ({
         { rocketDescription }
       </p>
       <button
+        type="button"
         id={rocketId}
         onClick={() => handleBooking(rocketId)}
         className="btn1"
