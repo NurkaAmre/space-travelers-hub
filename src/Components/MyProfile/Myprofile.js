@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { allRockets } from '../redux/rockets/rocketsSlice';
 import './Myprofile.css';
+import space from '../../assets/space.png';
 
 const UserProfile = () => {
   const rockets = useSelector(allRockets);
@@ -12,7 +13,7 @@ const UserProfile = () => {
     <div className="MyProfile">
       <div className="MyProfileChild">
 
-        <h2 className="ChildTitle">My Rockets</h2>
+        <h2 className="ChildTitle">My Rockets<img src={space} alt="Logo" className="image" /> </h2>
         {rocketsReserved.length === 0 ? (
           <>
             <span>No Rockets Reserved, yet</span>
