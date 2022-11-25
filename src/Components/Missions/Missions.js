@@ -4,7 +4,6 @@ import { JoinMission, LeaveMission, RetrieveMission } from '../redux/Mission/mis
 import Mission from './Mission';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
 const Missions = () => {
     const missionItems = useSelector((state) => state.mission);
     const dispatch = useDispatch();
@@ -36,14 +35,12 @@ const Missions = () => {
                     {missionItems.map(item => (
                         <Mission key={item.id} id={item.id} name={item.mission_name} desc={item.description} status={item.status} handleClick={handleClick} missionsL={missionItems} />
                     ))}
+        </tbody>
 
-                </tbody>
+      </table>
+    </div>
 
-            </table>
-        </div>
-
-    );
-
-}
+  );
+};
 
 export default Missions;

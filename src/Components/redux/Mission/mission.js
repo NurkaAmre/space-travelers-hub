@@ -46,8 +46,7 @@ const RetrieveMission = () => (dispatch) => {
                 const missionItem = response.data[key];
                 return {
                     id: key,
-                    ...missionItem,
-                    status: false
+                    ...missionItem
                 };
             });
             dispatch({

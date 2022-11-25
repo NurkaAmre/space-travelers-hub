@@ -1,3 +1,35 @@
-main {
-    padding-top: 10%;
+.MyProfile {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+.MyProfileChild {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.childTitle {
+  padding-bottom: 50px;
+  padding: 5px 10px;
+
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 45%;
+}
+
+.listChild {
+  border: solid 1px rgb(55, 53, 53);
+  padding: 20px 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
 }
