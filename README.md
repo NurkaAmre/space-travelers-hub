@@ -1,27 +1,5 @@
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-After you're finished please remove all the comments and instructions!
--->
-
 <div align="center">
 
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
@@ -227,13 +205,13 @@ I would like to thank [https://docs.spacexdata.com/]
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
+- **[Can I add more styling]**
 
-  - [Answer_1]
+  - [Yes you can]
 
-- **[Question_2]**
+- **[Can I add more rockets ?]**
 
-  - [Answer_2]
+  - [No U need to talk with API]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
