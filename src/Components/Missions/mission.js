@@ -7,7 +7,7 @@ const Mission = (item) => {
     <tr>
       <th scope="row">{name}</th>
       <td>{desc}</td>
-      <td className="align-self-center">
+      <td>
         <span
           className={status ? "badge bg-info text-dark" : "badge bg-secondary"}
         >
@@ -18,7 +18,7 @@ const Mission = (item) => {
         <button
           type="button"
           className={
-            status ? "btn btn-outline-dark p-0" : "btn btn-outline-danger p-0"
+            status ? "btn btn-outline-dark" : "btn btn-outline-danger"
           }
           onClick={() => handleClick(id, missionsL, status)}
         >

@@ -5,8 +5,10 @@ import "./Myprofile.css";
 
 const UserProfile = () => {
   const rockets = useSelector(allRockets);
-  const missionItems = useSelector((state) => state.mission);
-  const reservedMissions = missionItems.filter((missionItems) => missionItems.status);
+  const missionItems = useSelector((state) => state.mission.missions);
+  const reservedMissions = missionItems.filter(
+    (missionItems) => missionItems.status,
+  );
   const rocketsReserved = rockets.filter((rocket) => rocket.reserved);
 
   return (
@@ -26,9 +28,12 @@ const UserProfile = () => {
             </ul>
           ))
         )}
+      </div>
+      <div className="MyProfileChild">
+        <h2 className="ChildTitle">My Missions</h2>
         {reservedMissions.length === 0 ? (
           <>
-            <span>No Rockets Reserved, yet</span>
+            <span>No Missions Reserved, yet</span>
           </>
         ) : (
           reservedMissions.map(({ missionId: id, mission_name }) => (
