@@ -152,8 +152,8 @@ To run tests, run the following command:
 👤 **Davian**
 
 - GitHub: [@githubhandle](https://github.com/Dadadon)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- Twitter: [@twitterhandle](https://twitter.com/davianBeroni)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/davian-beroni-502351b7/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
