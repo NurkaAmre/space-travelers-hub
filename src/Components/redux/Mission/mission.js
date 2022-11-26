@@ -1,5 +1,3 @@
-import axios from "axios";
-
 const apiUrl = "https://api.spacexdata.com/v3/missions";
 const RETRIEVE_MISSION = "SPACE-STORE/Mission/RETRIEVE_MISSION";
 const JOIN_MISSION = "SPACE-STORE/Mission/JOIN_MISSION";
@@ -13,9 +11,10 @@ const InitialState = {
 };
 
 const RetrieveMission = () => (dispatch) => {
-  axios.get(apiUrl).then((response) => {
-    const missionItems = Object.keys(response.data).map((key) => {
-      const missionItem = response.data[key];
+  fetch(apiUrl).then((response) => response.json()).then((data) => {
+    console.log(data)
+    const missionItems = Object.keys(data).map((key) => {
+      const missionItem = data[key];
       return {
         id: key,
         ...missionItem,
@@ -26,7 +25,7 @@ const RetrieveMission = () => (dispatch) => {
       type: RETRIEVE_MISSION,
       payload: missionItems,
     });
-  });
+  })
 };
 
 const handleMissionReducer = (state = InitialState, action) => {
