@@ -1,0 +1,49 @@
+.flu {
+  display: flex;
+  gap: 25px;
+  margin-top: 5%;
+}
+
+.imge {
+  height: 250px;
+  width: 350px;
+  margin-left: 50px;
+}
+
+.flex {
+  display: flex;
+}
+
+.font {
+  font-size: 2rem;
+  margin-top: 5px;
+}
+
+.my-2 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.bg-red-700 {
+  background-color: #0096ff;
+  color: aliceblue;
+  margin-top: 50px;
+  width: 120px;
+  height: 30px;
+  border-radius: 3px;
+  border: none;
+}
+
+.bg-white {
+  border-radius: 3px;
+  margin-top: 50px;
+}
+
+.reserved {
+  background-color: #19a5aa;
+  border: 1px solid #0096ff;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14px;
+  margin-right: 10px;
+}
