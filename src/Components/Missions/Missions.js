@@ -9,10 +9,10 @@ import Mission from "./mission";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Missions = () => {
-  const missionItems = useSelector((state) => state.mission);
+  const missionItems = useSelector((state) => state.mission.missions);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(RetrieveMission());
+    if (missionItems.length === 0) { dispatch(RetrieveMission()); }
   }, [dispatch]);
 
   const handleClick = (itemId, mArr, stat) => {
@@ -33,7 +33,7 @@ const Missions = () => {
               Description
             </th>
             <th scope="col">Status</th>
-            <th scope="col"/>
+            <th scope="col" />
           </tr>
         </thead>
         <tbody>

@@ -5,21 +5,67 @@ const RETRIEVE_MISSION = "SPACE-STORE/Mission/RETRIEVE_MISSION";
 const JOIN_MISSION = "SPACE-STORE/Mission/JOIN_MISSION";
 const LEAVE_MISSION = "SPACE-STORE/Mission/LEAVE_MISSION";
 
-const InitialState = [];
+const InitialState = {
+  missions: [],
+  status: 'idle', // 'idle' | 'loading' | 'succeeded' | 'failed'
+  error: null,
+  message: 'mission',
+};
+
+const RetrieveMission = () => (dispatch) => {
+  axios.get(apiUrl).then((response) => {
+    const missionItems = Object.keys(response.data).map((key) => {
+      const missionItem = response.data[key];
+      return {
+        id: key,
+        ...missionItem,
+        status: false,
+      };
+    });
+    dispatch({
+      type: RETRIEVE_MISSION,
+      payload: missionItems,
+    });
+  });
+};
 
 const handleMissionReducer = (state = InitialState, action) => {
   switch (action.type) {
     case RETRIEVE_MISSION:
-      console.log(action.payload);
-      return [...action.payload];
+      return {
+        ...state,
+        missions: action.payload,
+        status: 'succeeded',
+      }
     case JOIN_MISSION:
-      const newArray = [...action.missions];
-      newArray[action.missionid].status = true;
-      return [...newArray];
+      // const newArray = [...action.missions];
+      // newArray[action.missionid].status = true;
+      return {
+        ...state,
+        missions: [
+          ...state.missions.map((mission) => (
+            (mission.id !== action.missionid) ? mission : {
+              ...mission,
+              status: true,
+            }
+          )),
+        ],
+      }
     case LEAVE_MISSION:
-      const newArray2 = [...action.missions];
-      newArray2[action.missionid].status = false;
-      return [...newArray2];
+      console.log(state);
+      // const newArray2 = [...action.missions];
+      // newArray2[action.missionid].status = false;
+      return {
+        ...state,
+        missions: [
+          ...state.missions.map((mission) => (
+            (mission.id !== action.missionid) ? mission : {
+              ...mission,
+              status: false,
+            }
+          )),
+        ],
+      }
     default:
       return state;
   }
@@ -36,21 +82,5 @@ const LeaveMission = (missionid, missions) => ({
   missionid,
   missions,
 });
-
-const RetrieveMission = () => (dispatch) => {
-  axios.get(apiUrl).then((response) => {
-    const missionItems = Object.keys(response.data).map((key) => {
-      const missionItem = response.data[key];
-      return {
-        id: key,
-        ...missionItem,
-      };
-    });
-    dispatch({
-      type: RETRIEVE_MISSION,
-      payload: missionItems,
-    });
-  });
-};
 
 export { handleMissionReducer, RetrieveMission, JoinMission, LeaveMission };

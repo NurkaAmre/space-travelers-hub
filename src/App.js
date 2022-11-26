@@ -6,7 +6,7 @@ import store from './Components/redux/configureStore';
 // Components
 import Navbar from './Components/Header/Navbar';
 import Rockets from './Pages/Rockets';
-import Missions from './Components/Missions/Missions';
+import Missions from './Pages/Missions';
 import MyProfile from './Components/MyProfile/Myprofile';
 
 function App() {

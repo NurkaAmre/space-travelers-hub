@@ -1,6 +1,6 @@
 const api = {
   fetchRockets: async () => {
-    const response = await fetch('https://api.spacexdata.com/v3/rockets');
+    const response = await fetch("https://api.spacexdata.com/v3/rockets");
     const data = await response.json();
     const rockets = data.map(
       ({
