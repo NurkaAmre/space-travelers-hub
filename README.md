@@ -1,3 +1,13 @@
+# 📖 [Space Travellers hub] <a name="about-project"></a>
+
+<p align="center">
+  <img src="./asset/space.jpeg" width="700" title="hover text">
+  <img src="./asset/space1.jpeg" width="700" alt="accessibility text">
+  <img src="./asset/space2.jpeg" width="700" alt="accessibility text">
+</p>
+
+> Describe your project in 1 or 2 sentences.
+
 <h2 align="center"> Space Travellers hub</h2> 
 <h4 align="center"> Simple Page Application created with React and Redux and uses an SpaceX API to show the Rockets, Missions and Dragons. The user can reserve any Rocket, Mission or Dragon and display it in My Profile's page.</h4>
 
