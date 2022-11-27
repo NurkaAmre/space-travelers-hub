@@ -5,8 +5,6 @@
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
-
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -37,9 +35,16 @@
 
 # 📖 [Space Travellers hub] <a name="about-project"></a>
 
+<p align="center">
+  <img src="./asset/space.jpeg" width="700" title="hover text">
+  <img src="./asset/space1.jpeg" width="700" alt="accessibility text">
+  <img src="./asset/space2.jpeg" width="700" alt="accessibility text">
+</p>
+
 > Describe your project in 1 or 2 sentences.
 
-**[Space Travellers hub]** is a a Simple Page Application created with React and Redux and uses an SpaceX API to show the Rockets, Missions and Dragons. The user can reserve any Rocket, Mission or Dragon and display it in My Profile's page.
+<h2 align="center"> Space Travellers hub</h2> 
+<h4 align="center"> Simple Page Application created with React and Redux and uses an SpaceX API to show the Rockets, Missions and Dragons. The user can reserve any Rocket, Mission or Dragon and display it in My Profile's page.</h4>
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -109,18 +114,17 @@ To have installed node.js and Git
 Clone this repository to your desired folder:
 
 - First enter the folder you want to save the project.
- `cd my-folder`
+  `cd my-folder`
 
 - After moving into the directory you want to save the project you could clone it using the terminal.
-` git clone git@github.com:NurkaAmre/space-travelers-hub.git`
-
+  ` git clone git@github.com:NurkaAmre/space-travelers-hub.git`
 
 ### Install
 
 Install this project with:
 
 ` cd space-travelers-hub`
- ` npm install `
+`npm install`
 
 ### Usage
 
@@ -133,7 +137,6 @@ To run the project, execute the following command:
 To run tests, run the following command:
 
 `npm run test`
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
